@@ -1,12 +1,8 @@
 rows = int(input("How many rows? : "))
 
-num = int(input("How many numbers? : "))
+num = 100 // rows
 
-for i in range(1, rows):
-    print(i)
-    for j in range(1, num):
-        
-         if j < num:
-            print(j, end=" ")
-              
+for i in range(rows):
+    for j in range(1, num + 1):
+        print(i * num + j, end= ' ')
     print()
